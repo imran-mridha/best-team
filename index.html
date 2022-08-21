@@ -6,15 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Make Your Best Team</title>
-  <!-- Tilwind CDN  -->
+  <!-- DaisyUI CDN  -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap');
 
     body {
       font-family: 'Berkshire Swash', cursive;
       font-family: 'Manrope', sans-serif;
+    }
+
+    .hero-section {
+      min-height: 50vh;
+    }
+
+    .hero-title {
+      font-family: 'Berkshire Swash', cursive;
     }
   </style>
 </head>
@@ -23,20 +31,162 @@
   <!-- Header Section  -->
   <header>
     <!-- Hero Section  -->
-    <section class="bg-dark text-light">
-      <div class="w-50 mx-auto text-center py-6">
-        <h1 style="font-family: Berkshire Swash" class="text-danger">Make your Best Team</h1>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-          velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <section class="hero-section bg-gray-900 text-white">
+      <div class="w-10/12 mx-auto py-10 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-4">
+          <div class="md:mt-0 lg:mt-10 text-center lg:text-start">
+            <h1 class="hero-title text-4xl md:text-5xl text-red-500">Make your Team Best !!!</h1>
+            <p class="text-xl md:py-5 py-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia
+              consequat duis enim
+              velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+          <div>
+            <img src="resources/images/Qatar.avif" alt="" class="w-full rounded-lg">
+          </div>
+        </div>
       </div>
     </section>
   </header>
+  <!-- Main Section  -->
+
+  <main>
+    <!-- Player Section  -->
+    <section class="player-section py-10 bg-gray-800">
+      <div class="grid lg:grid-cols-4 grid-cols-1 lg:gap-4 gap-y-4 w-10/12 lg:w-10/12 mx-auto">
+        <div class="col-span-3 ">
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+            <div class="card-messi bg-slate-50">
+              <img src="resources/images/messi.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Lionel Messi</h2>
+                  <p>36 Goals || 120 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-naymar bg-slate-50">
+              <img src="resources/images/naymar.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Neymar Jr</h2>
+                  <p>25 Goals || 60 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-mbappe bg-slate-50">
+              <img src="resources/images/mbappe.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Kylian Mbappé</h2>
+                  <p>30 Goals || 80 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-machado bg-slate-50">
+              <img src="resources/images/machado.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Vítor Machado</h2>
+                  <p>27 Goals || 50 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-ramos bg-slate-50">
+              <img src="resources/images/ramos.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Renato Sanches</h2>
+                  <p>22 Goals || 90 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-messi bg-slate-50">
+              <img src="resources/images/messi.png" alt="" class="w-full">
+              <div class="text-center">
+                <div class="player-info pt-5">
+                  <h2 class="font-bold text-2xl pb-2">Lionel Messi</h2>
+                  <p>36 Goals || 120 Assist</p>
+                </div>
+                <div class="player-select px-5 py-5">
+                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="">
+          <div class="bg-gray-900 text-white p-5 mb-4">
+            <h2 class="text-center border-b text-2xl font-bold p-2">Selected Player</h2>
+            <ul class="list-decimal p-5">
+              <li class="my-3">Player Name</li>
+              <li class="my-3">Player Name</li>
+              <li class="my-3">Player Name</li>
+              <li class="my-3">Player Name</li>
+              <li class="my-3">Player Name</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 text-white p-5">
+            <div class="budget-title border-b p-2 my-4">
+              <h2 class="text-center text-2xl font-bold">Budget</h2>
+            </div>
+            <div class="flex justify-between my-4">
+              <h3 class="text-xl">Per Player :</h3>
+              <input class="w-1/2 rounded py-1" type="text">
+            </div>
+            <div class="calulate">
+              <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate</button>
+            </div>
+            <div class="flex justify-between my-4">
+              <h3 class="text-xl">Player Expenses :</h3>
+              <h4 class="text-xl"><span>$ </span><span>00</span></h4>
+            </div>
+            <div class="flex justify-between my-4">
+              <h3 class="text-xl">Manager :</h3>
+              <input class="w-1/2 rounded py-1" type="text">
+            </div>
+            <div class="flex justify-between my-4">
+              <h3 class="text-xl">Coach :</h3>
+              <input class="w-1/2 rounded py-1" type="text">
+            </div>
+            <div class="calulate">
+              <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate Total</button>
+            </div>
+            <div class="flex justify-between my-4">
+              <h3 class="text-xl">Total :</h3>
+              <h4 class="text-xl"><span>$ </span><span>00</span></h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
 
 
 
 
-
-
+  <script src="js/card.js"></script>
 </body>
 
 </html>
