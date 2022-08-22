@@ -10,6 +10,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    /* Google Fonts  */
     @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap');
 
     body {
@@ -21,7 +22,7 @@
       min-height: 50vh;
     }
 
-    .hero-title {
+    .title {
       font-family: 'Berkshire Swash', cursive;
     }
   </style>
@@ -35,11 +36,8 @@
       <div class="w-10/12 mx-auto py-10 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-4">
           <div class="md:mt-0 lg:mt-10 text-center lg:text-start">
-            <h1 class="hero-title text-4xl md:text-5xl text-red-500">Make your Team Best !!!</h1>
-            <p class="text-xl md:py-5 py-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia
-              consequat duis enim
-              velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <h1 class="title text-4xl md:text-5xl text-red-500">Make your Team Best !!!</h1>
+            <p class="text-xl md:py-5 py-10">Simply Select Five Player to Make your team best, those are super active & crazy to win every game. You won't able to Select above 5 player on your team.</p>
           </div>
           <div>
             <img src="resources/images/Qatar.avif" alt="" class="w-full rounded-lg">
@@ -60,11 +58,12 @@
               <img src="resources/images/messi.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Lionel Messi</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Lionel Messi</h2>
                   <p>36 Goals || 120 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -72,11 +71,12 @@
               <img src="resources/images/naymar.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Neymar Jr</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Neymar Jr</h2>
                   <p>25 Goals || 60 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Selecet</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Selecet</button>
                 </div>
               </div>
             </div>
@@ -84,11 +84,12 @@
               <img src="resources/images/mbappe.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Kylian Mbappé</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Kylian Mbappé</h2>
                   <p>30 Goals || 80 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -96,11 +97,12 @@
               <img src="resources/images/machado.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Vítor Machado</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Vítor Machado</h2>
                   <p>27 Goals || 50 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -108,11 +110,12 @@
               <img src="resources/images/ramos.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Sergio Ramos</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Sergio Ramos</h2>
                   <p>22 Goals || 90 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -120,11 +123,12 @@
               <img src="resources/images/sanches.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Renato Sanches</h2>
+                  <h2 class="title font-bold text-2xl pb-2">Renato Sanches</h2>
                   <p>20 Goals || 40 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                  <button onclick="addPlayer(this)"
+                    class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
                 </div>
               </div>
             </div>
@@ -152,7 +156,8 @@
               <input id="per-player-input" class="w-1/2 rounded py-1 px-2" type="text" placeholder="Player Costs">
             </div>
             <div class="calulate">
-              <button id="calculate-btn" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+              <button id="calculate-btn"
+                class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
             </div>
             <div class="flex justify-between my-4 text-white">
               <h3 class="">Player Expenses :</h3>
@@ -167,7 +172,8 @@
               <input id="coach-costs" class="w-1/2 rounded py-1 px-2" type="text" placeholder="Coach Costs">
             </div>
             <div class="calulate text-white">
-              <button id="total-calculate-btn" class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate Total</button>
+              <button id="total-calculate-btn" class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate
+                Total</button>
             </div>
             <div class="flex justify-between text-white my-4">
               <h3 class="">Total :</h3>
@@ -187,8 +193,7 @@
     <h4>Copyright @ 2022 All Rights Reserved.</h4>
   </footer>
 
-
-
+  <script src="js/utilities.js"></script>
   <script src="js/card.js"></script>
 </body>
 
