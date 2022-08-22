@@ -24,8 +24,14 @@ function addPlayer(element){
   const playerName = (element.parentNode.parentNode.children[0].children[0].innerText);
   // console.log(playerName);
 
-  playerArr.push(playerName);
-  // console.log(player);
+  if(playerArr.length < 5){
+    playerArr.push(playerName);
+  }else{
+    alert('You Cannot Select greater than 5 player!!!')
+    element.removeAttribute('disabled','true')
+    element.classList.remove('bg-red-300')
+  }
+  // playerArr.push(playerName);
 
   display(playerArr);
 }
@@ -59,34 +65,32 @@ function setTextElementValue(elementId, value){
 }
 
 function calculatePlayerExpense(){
-  // Get Players Length
-
-  const playersLength = playerArr.length;
-
-  // get Per player input value by id
-
-  const perPlayerCosts = getInputFieldValue('per-player-input');
-
-  // Calculate Player expenses
-
-  const totalPlayerExpense = (perPlayerCosts * playersLength);
-
-  return totalPlayerExpense;
+// Get Players Length
+const playersLength = playerArr.length;
+// get Per player input value by id
+const perPlayerCosts = getInputFieldValue('per-player-input');
+// Calculate Player expenses
+const totalPlayerExpense = (perPlayerCosts * playersLength);
+return totalPlayerExpense;
 }
 
 // Set Click Event Handaler on the Calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function(){
 
-  // // Get Players Length
+  // get Per player input value by id
 
-  // const playersLength = playerArr.length;
+  const perPlayerCosts = getInputFieldValue('per-player-input');
 
-  // // get Per player input value by id
+  if(isNaN(perPlayerCosts)){
+    alert('Per Player Input value should ba number!!!');
+    return;
+  }else if(perPlayerCosts < 0){
+    alert('Input Value Should not be nagative!!');
+    return;
+   }
 
-  // const perPlayerCosts = getInputFieldValue('per-player-input');
-
-  // Calculate Player expenses
+  //Get Player expenses
 
   const totalPlayerExpense = calculatePlayerExpense();
 
@@ -96,9 +100,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 
   // Set Player Expense Ammount on the Player Expense Element
 
-  playerExpense.innerText = setTextElementValue('player-expense', totalPlayerExpense)
-
-  return totalPlayerExpense;
+  playerExpense.innerText = setTextElementValue('player-expense', totalPlayerExpense);
 
 })
 
@@ -113,6 +115,14 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
   const managerCosts = getInputFieldValue('manager-input');
 
   const coachCosts = getInputFieldValue('coach-costs');
+
+  if(isNaN(managerCosts) || isNaN(coachCosts)){
+    alert('Input value should ba number!!!');
+    return;
+  }else if(managerCosts < 0){
+    alert('Input Value Should not be nagative!!');
+    return;
+   }
 
   const totalCosts = (totalPlayerCosts + managerCosts + coachCosts);
 
