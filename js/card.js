@@ -57,10 +57,8 @@ function setTextElementValue(elementId, value){
   const textElementValue = document.getElementById(elementId);
   textElementValue.innerText = value;
 }
-// Set Click Event Handaler on the Calculate button
 
-document.getElementById('calculate').addEventListener('click', function(){
-
+function calculatePlayerExpense(){
   // Get Players Length
 
   const playersLength = playerArr.length;
@@ -73,6 +71,25 @@ document.getElementById('calculate').addEventListener('click', function(){
 
   const totalPlayerExpense = (perPlayerCosts * playersLength);
 
+  return totalPlayerExpense;
+}
+
+// Set Click Event Handaler on the Calculate button
+
+document.getElementById('calculate-btn').addEventListener('click', function(){
+
+  // // Get Players Length
+
+  // const playersLength = playerArr.length;
+
+  // // get Per player input value by id
+
+  // const perPlayerCosts = getInputFieldValue('per-player-input');
+
+  // Calculate Player expenses
+
+  const totalPlayerExpense = calculatePlayerExpense();
+
   // Get Player expense Element Value
 
   const playerExpense = getTextElementValue('player-expense');
@@ -81,12 +98,26 @@ document.getElementById('calculate').addEventListener('click', function(){
 
   playerExpense.innerText = setTextElementValue('player-expense', totalPlayerExpense)
 
-  // get Per player input value by id
+  return totalPlayerExpense;
+
+})
+
+
+
+// Set Click Event Handaler on the Calculate Total button
+
+document.getElementById('total-calculate-btn').addEventListener('click', function(){
+
+  const totalPlayerCosts = calculatePlayerExpense();
 
   const managerCosts = getInputFieldValue('manager-input');
 
-  console.log(managerCosts);
+  const coachCosts = getInputFieldValue('coach-costs');
 
+  const totalCosts = (totalPlayerCosts + managerCosts + coachCosts);
 
+  const totalCostElement = getTextElementValue('total-costs');
 
+  totalCostElement.innerText = setTextElementValue('total-costs', totalCosts);
+  
 })

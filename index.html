@@ -152,7 +152,7 @@
               <input id="per-player-input" class="w-1/2 rounded py-1 px-2" type="text" placeholder="Player Costs">
             </div>
             <div class="calulate">
-              <button id="calculate" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+              <button id="calculate-btn" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
             </div>
             <div class="flex justify-between my-4 text-white">
               <h3 class="">Player Expenses :</h3>
@@ -164,14 +164,14 @@
             </div>
             <div class="flex justify-between my-4">
               <h3 class="text-white">Coach :</h3>
-              <input class="w-1/2 rounded py-1 px-2" type="text" placeholder="Coach Costs">
+              <input id="coach-costs" class="w-1/2 rounded py-1 px-2" type="text" placeholder="Coach Costs">
             </div>
             <div class="calulate text-white">
-              <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate Total</button>
+              <button id="total-calculate-btn" class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate Total</button>
             </div>
             <div class="flex justify-between text-white my-4">
               <h3 class="">Total :</h3>
-              <h4 class=""><span>$ </span><span>00</span></h4>
+              <h4 class=""><span>$ </span><span id="total-costs">00</span></h4>
             </div>
           </div>
 
