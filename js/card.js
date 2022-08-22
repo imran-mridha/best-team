@@ -67,11 +67,11 @@ document.getElementById('calculate').addEventListener('click', function(){
 
   // get Per player input value by id
 
-  const perPlayerValue = getInputFieldValue('per-player');
+  const perPlayerCosts = getInputFieldValue('per-player-input');
 
   // Calculate Player expenses
 
-  const totalPlayerExpense = (perPlayerValue * playersLength);
+  const totalPlayerExpense = (perPlayerCosts * playersLength);
 
   // Get Player expense Element Value
 
@@ -81,7 +81,12 @@ document.getElementById('calculate').addEventListener('click', function(){
 
   playerExpense.innerText = setTextElementValue('player-expense', totalPlayerExpense)
 
-  // console.log(playerExpense);
+  // get Per player input value by id
+
+  const managerCosts = getInputFieldValue('manager-input');
+
+  console.log(managerCosts);
+
 
 
 })
