@@ -79,9 +79,9 @@ document.getElementById('calculate').addEventListener('click', function(){
 
   // Set Player Expense Ammount on the Player Expense Element
 
+  playerExpense.innerText = setTextElementValue('player-expense', totalPlayerExpense)
 
-
-  console.log(playerExpense);
+  // console.log(playerExpense);
 
 
 })
