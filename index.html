@@ -64,7 +64,7 @@
                   <p>36 Goals || 120 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@
                   <p>25 Goals || 60 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Selecet</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Selecet</button>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@
                   <p>30 Goals || 80 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
                   <p>27 Goals || 50 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -108,11 +108,11 @@
               <img src="resources/images/ramos.png" alt="" class="w-full">
               <div class="text-center">
                 <div class="player-info pt-5">
-                  <h2 class="font-bold text-2xl pb-2">Renato Sanches</h2>
+                  <h2 class="font-bold text-2xl pb-2">Sergio Ramos</h2>
                   <p>22 Goals || 90 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Select</button>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@
                   <p>20 Goals || 40 Assist</p>
                 </div>
                 <div class="player-select px-5 py-5">
-                  <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
+                  <button onclick="addPlayer(this)" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
                 </div>
               </div>
             </div>
@@ -135,41 +135,41 @@
         <div class="">
           <div class="bg-gray-900 text-white p-5 mb-4">
             <h2 class="text-center border-b text-2xl font-bold p-2">Selected Player</h2>
-            <ul class="list-decimal p-5">
+            <ul id="players" class="list-decimal p-5">
+              <!-- <li class="my-3">Player Name</li>
               <li class="my-3">Player Name</li>
               <li class="my-3">Player Name</li>
               <li class="my-3">Player Name</li>
-              <li class="my-3">Player Name</li>
-              <li class="my-3">Player Name</li>
+              <li class="my-3">Player Name</li> -->
             </ul>
           </div>
-          <div class="bg-gray-900 text-white p-5">
-            <div class="budget-title border-b p-2 my-4">
+          <div class="bg-gray-900 p-5">
+            <div class="budget-title border-b p-2 my-4 text-white">
               <h2 class="text-center text-2xl font-bold">Budget</h2>
             </div>
             <div class="flex justify-between my-4">
-              <h3 class="text-xl">Per Player :</h3>
-              <input class="w-1/2 rounded py-1" type="text">
+              <h3 class="text-xl text-white">Per Player :</h3>
+              <input id="per-player" class="w-1/2 rounded py-1 px-2" type="text" placeholder="Player Costs">
             </div>
             <div class="calulate">
-              <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate</button>
+              <button id="calculate" class="bg-red-500 w-full text-xl font-semibold py-1 rounded text-white">Calculate</button>
             </div>
-            <div class="flex justify-between my-4">
+            <div class="flex justify-between my-4 text-white">
               <h3 class="text-xl">Player Expenses :</h3>
-              <h4 class="text-xl"><span>$ </span><span>00</span></h4>
+              <h4 class="text-xl"><span>$ </span><span id="player-expense">00</span></h4>
             </div>
             <div class="flex justify-between my-4">
-              <h3 class="text-xl">Manager :</h3>
-              <input class="w-1/2 rounded py-1" type="text">
+              <h3 class="text-xl text-white">Manager :</h3>
+              <input class="w-1/2 rounded py-1 px-2" type="text" placeholder="Costs">
             </div>
             <div class="flex justify-between my-4">
-              <h3 class="text-xl">Coach :</h3>
-              <input class="w-1/2 rounded py-1" type="text">
+              <h3 class="text-xl text-white">Coach :</h3>
+              <input class="w-1/2 rounded py-1 px-2" type="text" placeholder="Coach Costs">
             </div>
-            <div class="calulate">
+            <div class="calulate text-white">
               <button class="bg-red-500 w-full text-xl font-semibold py-1 rounded">Calculate Total</button>
             </div>
-            <div class="flex justify-between my-4">
+            <div class="flex justify-between text-white my-4">
               <h3 class="text-xl">Total :</h3>
               <h4 class="text-xl"><span>$ </span><span>00</span></h4>
             </div>
