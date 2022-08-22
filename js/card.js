@@ -1,9 +1,8 @@
 const playerArr = [];
+
 // Set Click Event Handaler on the Calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
-
-  // get Per player input value by id
 
   const perPlayerCosts = getInputFieldValue('per-player-input');
 
@@ -19,7 +18,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
   const totalPlayerExpense = calculatePlayerExpense();
 
-  // Get Player expense Element Value
+  // Get Player expense Text Element
 
   const playerExpense = getTextElementValue('player-expense');
 
