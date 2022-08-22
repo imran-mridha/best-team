@@ -32,7 +32,7 @@ function addPlayer(element) {
 function getInputFieldValue(inputId) {
   const inputFieldValue = document.getElementById(inputId);
   const inputValueString = inputFieldValue.value;
-  const inputValue = parseFloat(inputValueString);
+  const inputValue = parseInt(inputValueString);
 
   return inputValue;
 }
@@ -43,7 +43,7 @@ function getTextElementValue(elementId) {
 
   const textElementValue = document.getElementById(elementId);
   const elementValueString = textElementValue.innerText;
-  const elementValue = parseFloat(elementValueString);
+  const elementValue = parseInt(elementValueString);
 
   return elementValue;
 }
